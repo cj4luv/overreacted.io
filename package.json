@@ -3,7 +3,7 @@
   "private": true,
   "description": "Overreacted",
   "version": "1.0.0",
-  "author": "Dan Abramov <dan.abramov@me.com>",
+  "author": "Jaehun Cho <cj4luv@gmail.com>",
   "bugs": {
     "url": "https://github.com/gaearon/overreacted.io/issues"
   },
@@ -55,8 +55,9 @@
     "start": "npm run develop",
     "build": "rm -rf public && rm -rf .cache && gatsby build",
     "now-build": "gatsby build",
-    "deploy": "yarn build && cp now.json public/ && cd public && now alias $(now) overreacted.io",
-    "dry": "yarn build && cp now.json public/ && cd public && now"
+    "deploy": "yarn build && cp now.json public/ && cd public && now alias $(now) chojaehun.github.io",
+    "dry": "yarn build && cp now.json public/ && cd public && now",
+    "git-deploy": "rm -rf public && rm -rf .cache && gatsby build && gh-pages -d public -b master -r https://github.com/chojaehun/chojaehun.github.io.git"
   },
   "husky": {
     "hooks": {
