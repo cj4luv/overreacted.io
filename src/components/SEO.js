@@ -27,6 +27,7 @@ function SEO({ meta, image, title, description, slug, lang = 'en' }) {
         const { siteMetadata } = data.site;
         const metaDescription = description || siteMetadata.description;
         const metaImage = image ? `${siteMetadata.siteUrl}/${image}` : null;
+        console.log('metaImage', metaImage);
         const url = `${siteMetadata.siteUrl}${slug}`;
         return (
           <Helmet
@@ -37,7 +38,7 @@ function SEO({ meta, image, title, description, slug, lang = 'en' }) {
                   title,
                 }
               : {
-                  title: `${siteMetadata.title} — A blog by Dan Abramov`,
+                  title: `${siteMetadata.title} — A blog by Jaehun Cho`,
                 })}
             meta={[
               {

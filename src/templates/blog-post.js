@@ -15,6 +15,7 @@ import {
   createLanguageLink,
   loadFontsForCode,
 } from '../utils/i18n';
+import profilePic from '../assets/profile-pic.jpg';
 
 const GITHUB_USERNAME = 'gaearon';
 const GITHUB_REPO_NAME = 'overreacted.io';
@@ -141,6 +142,7 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.spoiler}
           slug={post.fields.slug}
+          image={profilePic}
         />
         <main>
           <article>

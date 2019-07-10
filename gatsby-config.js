@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: 'Overreacted',
-    author: 'Dan Abramov',
-    description: 'Personal blog by Dan Abramov. I explain with words and code.',
-    siteUrl: 'https://overreacted.io',
+    author: 'Jaehun Cho',
+    description: 'Personal blog by Jaehun Cho. I explain with words and code.',
+    siteUrl: 'https://chojaehun.github.io',
     social: {
-      twitter: '@dan_abramov',
+      twitter: '@cj4luv',
     },
   },
   pathPrefix: '/',
@@ -126,7 +126,7 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
-            title: "Dan Abramov's Overreacted Blog RSS Feed",
+            title: "Jaehun Cho's Overreacted Blog RSS Feed",
           },
         ],
       },
